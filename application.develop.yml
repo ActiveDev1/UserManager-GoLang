@@ -1,0 +1,12 @@
+database:
+    dialect: mysql
+    host: 127.0.0.1
+    port: 3306
+    dbname: UserManager
+    username: root
+    password:
+    migration: true
+
+jwt:
+    secret: strong_secret
+    expireTime: 7200
