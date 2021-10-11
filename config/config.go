@@ -22,6 +22,9 @@ type Config struct {
 		Secret     string
 		ExpireTime int16
 	}
+	Log struct {
+		RequestLogFormat string `yaml:"request_log_format" default:"${remote_ip} ${uri} ${method} ${status}"`
+	}
 }
 
 const (
